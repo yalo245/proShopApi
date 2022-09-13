@@ -63,4 +63,3 @@ jobs:
           TESTRAIL_USERNAME: ${{ secrets.TESTRAIL_USERNAME }}
           TESTRAIL_APIKEY: ${{ secrets.TESTRAIL_APIKEY }}
       
-      
