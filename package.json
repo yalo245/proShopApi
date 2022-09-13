@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postman": "newman run postman/proshopAPI.postman_collection.json -e postman/QA_ProShop.postman_environment.json",
-    "postman:report": "newman run postman/proshopAPI.postman_collection.json -e postman/QA_ProShop.postman_environment.json --reporters=cli,htmlextra --reporter-htmlreporter-export reporter.html",
+    "postman:report": "newman run postman/proshopAPI.postman_collection.json -e postman/QA_ProShop.postman_environment.json --reporters=cli,htmlextra",
     "postman:testrail": "TESTRAIL_SUITEID=2 TESTRAIL_DOMAIN=ladybug34.testrail.io TESTRAIL_USERNAME=olga.shmeleva.us@gmail.com TESTRAIL_APIKEY=/QojLi3D5PBV7YyFDc8y-ikpIBkwAuaUgaZYsjhXP TESTRAIL_PROJECTID=1 TESTRAIL_TITLE='postman API Tests' newman run postman/proshopAPI.postman_collection.json -e postman/QA_ProShop.postman_environment.json --reporters cli, htmlextrs, testrail"
   },
   "keywords": [],
