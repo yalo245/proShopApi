@@ -55,5 +55,12 @@ jobs:
           name: RunReporter
           path: newman
           
+      # Run the API tests 
+      - name: Run API Tests
+        run: npm run newman:testrail
+        env:
+          TESTRAIL_DOMAIN: ${{ secrets.TESTRAIL_DOMAIN }}
+          TESTRAIL_USERNAME: ${{ secrets.TESTRAIL_USERNAME }}
+          TESTRAIL_APIKEY: ${{ secrets.TESTRAIL_APIKEY }}
       
       
